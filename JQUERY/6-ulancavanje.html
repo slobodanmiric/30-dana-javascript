@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #F6F6F6;
+            font-size: 30px;
+        }
+        .obavestenje {
+            width: 100%;
+            background: tomato;
+            text-align: center;
+            padding: 10px;
+            display: none;
+            position: fixed;
+            bottom: 0;
+        }
+        .obavestenje a {
+            color: white;
+            text-shadow: 0 0 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ulancavanje - Chaining</h1>
+    <hr>
+    <div class="obavestenje">
+        Prijavite se za <a href="">novosti</a>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        // $('.obavestenje').delay(4000);
+        // $('.obavestenje').slideDown()
+        // $('.obavestenje').delay(4000);
+        // $('.obavestenje').fadeOut();
+        $('.obavestenje').delay(4000).slideDown().delay(4000).fadeOut();
+    </script>
+</body>
+</html>

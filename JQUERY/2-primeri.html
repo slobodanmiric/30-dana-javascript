@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: sans-serif;
+            background-image: url(bg.png);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery primer - sintaksa</h1>
+        <hr>
+        <h2>Prvi primer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, nemo maxime quam libero quos temporibus deserunt ullam corrupti delectus! Impedit?</p>
+        <ul>
+            <li>Clan liste 1</li>
+            <li>Clan liste 2</li>
+            <li>Clan liste 3</li>
+            <li>Clan liste 4</li>
+        </ul>
+        <h2>Drugi primer</h2>
+        <ol>
+            <li>Clan liste 1</li>
+            <li>Clan liste 2</li>
+            <li>Clan liste 3</li>
+            <li>Clan liste 4</li>
+        </ol>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        var naslov = $('h1');
+        $(naslov).css({
+            'fontSize': '50px',
+            'color': 'red'
+        });
+        //$('li', 'ol').hide(2000);
+        var dodatniParagraf = '<p class="last">Novi paragraf</p>';
+        $('.container').append(dodatniParagraf);
+        $('.last').css({
+            'color': 'red',
+            'fontSize': '35px'
+        });
+    </script>
+</body>
+</html>

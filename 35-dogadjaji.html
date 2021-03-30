@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        button {
+            padding: 10px 30px;
+            border: 2px solid tomato;
+            background: transparent;
+            font-size: 20px;
+            cursor: pointer;
+            transition-duration: .3s;
+            margin: 10px;
+        }
+        button:hover {
+            background: tomato;;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events - Dogadjaji</h1>
+    <hr>
+    <button onclick="alert('Uspesno smo kliknuli')">Ja sam dugme klikni me :)</button>
+    <button onclick="jsEvent()">Klikni i meneeeee :)</button>
+    <script>
+        function jsEvent() {
+            alert('Kliknuli smo iz funkcije');
+        }
+
+        var dugme = document.getElementsByTagName('button')[0];
+        dugme.onclick = function() {
+            alert('Evo boljeg nacina od inline');
+        }
+
+        dugme.addEventListener('click', function() {
+            alert('Ovo je nacin koji cemo praktikovati na projektima');
+        });
+
+        dugme.addEventListener('click', jsEvent);
+
+    </script>
+</body>
+</html>

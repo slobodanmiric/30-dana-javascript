@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selektori</h1>
+    <hr>
+    <h2>Ja sam h2 naslov :)</h2>
+    <p class="izdvojen">Ja sam cool paragraf</p>
+    <div id="box">
+        <h3>Ja sam h3 naslov</h3>
+        <p>Ja sam paragraf unutar boxa</p>
+        <p>Ja sam drugi paragraf boxa</p>
+    </div>
+    <div>
+        <h4>Ja sam h4 naslov</h4>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <p>Ja sam p van diva</p>
+    <p>I Ja sam p van diva</p>
+
+    <p>&copy; Design by webcon</p>
+    <script src="jquery.js"></script>
+    <script>
+        //$('h1, h2, h3, h4').css('color', 'red');
+        $('.izdvojen').css({
+            'color': 'blue',
+            'backgroundColor': 'lightgray',
+            'border': '1px solid blue',
+            'padding': '10px',
+            'textAlign': 'center'
+        });
+        $('#box').css({
+            'border': '1px solid red',
+            'textAlign': 'center',
+            'backgroundColor': '#f7f7f7',
+        });
+        $('li:first').css('color', 'violet');
+        $('li:last').css('color', 'green');
+        $('li:odd').css('color', 'navy');
+        $('li:even').css('color', 'orange');
+        $('#box > p').css('backgroundColor', 'lightgreen');
+        $(':header').css({
+            'color':'red',
+            'backgroundColor': 'lightblue',
+            'textAlign': 'center',
+        });
+        $('p:contains("webcon")').css({
+            'color':'red',
+            'backgroundColor': 'lightblue',
+            'textAlign': 'center',
+        });
+    </script>
+</body>
+</html>
