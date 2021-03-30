@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Jos malo o funkcijama</h1>
+    <hr>
+    <script>
+        function imeFunkcije() {
+            console.log('Ja sam funkcija');
+        }
+        imeFunkcije();  // function statement
+
+        var krozVarijablu = function() {
+            console.log('Ja sam funjcija kroz varijablu pozvana');
+        }
+        krozVarijablu();  // function expression
+
+        var rolanje = {
+            model: 'Rollerblade',
+            brzina: 30,
+            voznja: function() {
+                console.log('SLoba kada kod stigne vozi ' + rolanje.model +  ' rolere i juri cak ' + rolanje.brzina + ' na sat i ostavlja bez daha pesake pored kojih rola');
+            }
+        }
+        rolanje.voznja();
+
+        function argumenti(a, b) {
+            console.log(a + b);
+        }
+        argumenti(3, 10, 100);
+
+
+    </script>
+</body>
+</html>

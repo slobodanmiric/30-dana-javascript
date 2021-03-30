@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Class</h1>
+    <hr>
+    <script>
+        class KurseviProgramiranja {
+            constructor() {
+                this.tip = `programiranja`;
+                this.cena = 500;
+            }
+        }
+        const sviPredavaci = [];
+        class Predavac extends KurseviProgramiranja {
+            constructor(godine = 18, ime = 'Dodaj ime') {
+                super();
+                this.godine = godine;
+                this.ime = ime;
+                this.dodajSvePredavace();
+            }
+            pozicija() {
+                console.log(`Front end`);
+            }
+            dodajSvePredavace() {
+                sviPredavaci.push(this);
+            }
+            static nastarijiPredavac(sviPredavaci) {
+                const nastariji = sviPredavaci.sort((x, y) => x.godine - y.godine);
+                console.log(nastariji.pop());
+            }
+        }
+        const front = new Predavac(43, 'Sloba');
+        const back = new Predavac(42, 'Danilo');
+        const wp = new Predavac(38, 'Boban');
+        console.log(front);
+        front.pozicija();
+        console.log(sviPredavaci);
+        Predavac.nastarijiPredavac(sviPredavaci);
+    </script>
+</body>
+</html>

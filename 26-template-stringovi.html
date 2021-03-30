@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Template stringovi</h1>
+    <hr>
+    <table cellpadding="10" border="2">
+        <thead>
+            <tr>
+                <th>Jelo</th>   
+                <th>Vrsta</th>            
+                <th>Poreklo</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>Gulas</td>
+                <td>Glavno jelo</td>
+                <td>Madjarska</td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>Glavno jelo</td>
+                <td>Italija</td>
+            </tr>
+            <tr>
+                <td>Manestra</td>
+                <td>Glavno jelo</td>
+                <td>Hrvatska</td>
+            </tr>
+            <tr>
+                <td>Sarma</td>
+                <td>Glavna jelo</td>
+                <td>Srbija</td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script>
+        let tbody = document.querySelector('tbody');
+        let popuna = [
+            {
+                jelo: 'Gulas',
+                vrsta: 'Glavno jelo',
+                poreklo: 'Madjarska'
+            },
+            {
+                jelo: 'Pasta',
+                vrsta: 'Glavno jelo',
+                poreklo: 'Italija'
+            },
+            {
+                jelo: 'Manetra',
+                vrsta: 'Glavno jelo',
+                poreklo: 'Hrvatska'
+            },
+            {
+                jelo: 'Sarma',
+                vrsta: 'Glavno jelo',
+                poreklo: 'Srbija'
+            }
+        ];
+        
+        function tabela() {
+            let podaci = ``;
+            for(let i = 0;i < popuna.length;i++) {
+                podaci += `
+                <tr>
+                    <td>${popuna[i].jelo}</td>
+                    <td>${popuna[i].vrsta}</td>
+                    <td>${popuna[i].poreklo}</td>
+                </tr>
+                `;
+            }
+            tbody.innerHTML = podaci;
+        }
+        tabela();
+        // let desktop = 'Dell';
+        // let laptopovi = "HP";
+        // let racunari = `Macbook 
+        // je moj omiljeni laptop
+        // ali volim i ${laptopovi}`;
+        // console.log(racunari);
+    </script>
+</body>
+</html>

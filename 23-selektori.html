@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="naslov">Selektori</h1>
+    <hr>
+    <h3>Podnaslov</h3>
+    <a class="link" href="https://stackoverflow.com/questions/7353641/javascript-selectors">Saznajte vise o selektorima</a>
+    <ul>
+        <li>getElementByID()</li>
+        <li>getElementsByTagName()</li>
+        <li>getElementsByClassName()</li>
+        <li>getElementsByName()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+    </ul>
+    <form>
+        <input type="text" name="forma">
+    </form>
+    <script>
+        var glavniNaslov = document.getElementById('naslov');
+        console.log(glavniNaslov);
+        // ova metoda vraca element
+        
+        var podnaslov = document.getElementsByTagName('h3');
+        console.log(podnaslov);
+        // ova metoda vraca niz
+
+        var link = document.getElementsByClassName('link');
+        console.log(link);
+        // i ova metoda vraca niz
+
+        var forma = document.getElementsByName('forma');
+        console.log(forma);
+        // i ova metoda vraca niz
+
+        var lista = document.querySelector('li');
+        console.log(lista);
+        // ova metoda vraca element i to uvek prvi !!!!
+
+        var liELementi = document.querySelectorAll('li');
+        console.log(liELementi);
+        // ova metoda vraca niz
+    </script>
+</body>
+</html>

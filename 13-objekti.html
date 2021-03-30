@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekti</title>
+</head>
+<body>
+    <h1>Objekti</h1>
+    <hr>
+    <script>
+        var zaposleni = {
+            ime: 'Slobodan Miric',
+            starost: 43,
+            pozicija: 'Developer / Designer / Predavac',
+            porodica: ['Tamara', 'Jovana', 'Marko', 'Frida'],
+            adresa: {
+                ulica: 'Kozacinskog',
+                broj: 5
+            }
+        };
+        console.log(zaposleni.starost);
+        console.log('Nas zaposleni ' + zaposleni.ime + ' ima ' + zaposleni.starost + ' godine i radi na poziciji ' + zaposleni.pozicija);
+
+        zaposleni.hobi = 'Muzika';
+        console.log('Nas zaposleni ' + zaposleni.ime + ' ima hobi i to je ' + zaposleni.hobi);
+
+        console.log(zaposleni.porodica[3]);
+        console.log(zaposleni.ime + ' ipak kao favorita umeste psa uzima crku koja se zove ' + zaposleni.porodica[1]);
+
+        console.log(zaposleni.ime + ' poziva sve radionicare na adresu ' + zaposleni.adresa.ulica + ' broj ' + zaposleni.adresa.broj+ ' na kafu' );
+
+        </script>
+</body>
+</html>

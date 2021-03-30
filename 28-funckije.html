@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Arrow funkcije</h1>
+    <hr>
+    <script>
+        // // function statement
+        // function statement() {
+        //     console.log('Function statement');
+        // }
+        // statement();
+
+        // // function expression
+        // let expression = function() {
+        //     console.log('I ova F nam radi');
+        // }
+        // expression();
+
+        // // metode - funkcije unutar objekata
+        // const zaposleni = {
+        //     pozicija: function() {
+        //         console.log('Front end developer');
+        //     }
+        // }
+        // zaposleni.pozicija();
+
+        // // Arrow funkcije
+        // const strelice = () => {
+        //     console.log('Ja sam arrow funkcija');
+        // }
+        // strelice();
+
+        const frontendDeveloper = ime => console.log(`Na poziciji front endera radi ${ime}`);
+        frontendDeveloper('Sloba');    
+
+        const bacEndDeveloper = ime => console.log(`Na poziciji back endera radi ${ime}`);
+        bacEndDeveloper('Dejan');
+    </script>
+</body>
+</html>
