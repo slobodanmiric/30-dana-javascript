@@ -1,0 +1,19 @@
+{
+  "name": "30-dana-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slobodanmiric/30-dana-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slobodanmiric/30-dana-javascript/issues"
+  },
+  "homepage": "https://github.com/slobodanmiric/30-dana-javascript#readme"
+}
